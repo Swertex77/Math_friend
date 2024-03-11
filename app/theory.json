@@ -1,0 +1,17 @@
+// Подгрузка теории
+{
+  "markerss":[
+    {
+      "title": "West",
+      "lat": 53.223798,
+      "lng": 44.889040,
+      "snippet": "placeinformation2010"
+    },
+    {
+      "title": "East",
+      "lat": 53.2220,
+      "lng": 44.8799,
+      "snippet": "placeinformation102"
+    }
+  ]
+}

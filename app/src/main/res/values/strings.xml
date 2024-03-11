@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Math_friend</string>
+    <item name="numbersInput" type="id">activity_features</item>
+    <item name="resultView" type="id">activity_features</item>
+    <item name="addButton" type="id">activity_features</item>
+    <item name="subtractButton" type="id">activity_features</item>
+    <item name="multiplyButton" type="id">activity_features</item>
+    <item name="divideButton" type="id">activity_features</item>
+    <!--<item name="divideButton" type="id">activity_features</item> -->
+</resources>

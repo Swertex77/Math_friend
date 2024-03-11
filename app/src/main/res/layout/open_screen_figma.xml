@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32D993"
+    android:backgroundTint="#32D993">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="188dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="6 класс"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="188dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="7 класс"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="304dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="9 класс"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="304dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="8 класс"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="328dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="10 класс"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="11 класс"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="267dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="216dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="1-2 курс"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#846969"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="364dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:text="Выберите класс/курс:"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
