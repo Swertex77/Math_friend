@@ -16,6 +16,7 @@
         android:text="6 класс"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
@@ -31,6 +32,7 @@
         android:text="7 класс"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.873"
@@ -46,6 +48,7 @@
         android:text="9 класс"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.868"
@@ -61,6 +64,7 @@
         android:text="8 класс"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
@@ -76,6 +80,7 @@
         android:text="10 класс"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +98,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -108,6 +114,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#846969"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -121,10 +128,21 @@
         android:textAlignment="gravity"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="72dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/__FirstPage" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
