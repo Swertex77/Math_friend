@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#32D993"
+    android:backgroundTint="#32D993">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="377dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:text="Выберите сложность:"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textDirection="firstStrongRtl"
+
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="299dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Легкий"
+        android:textAlignment="center"
+        android:textColor="#846969"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="299dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="472dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Средний"
+        android:textAlignment="center"
+        android:textColor="#846969"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="299dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="368dp"
+        android:backgroundTint="#D9D9D9"
+        android:text="Сложный"
+        android:textAlignment="center"
+        android:textColor="#846969"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="72dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/three_arrows_pointing_in_different_directions_choice_of_path_black_arrow_icon_vector_illustration_168129_2026" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
