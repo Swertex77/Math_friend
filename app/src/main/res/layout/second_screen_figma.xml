@@ -43,7 +43,7 @@
         android:id="@+id/button13"
         android:layout_width="302dp"
         android:layout_height="68dp"
-        android:layout_marginBottom="432dp"
+        android:layout_marginBottom="472dp"
         android:backgroundTint="#D9D9D9"
         android:text="II. Рациональные числа"
         android:textColor="#846969"
@@ -51,14 +51,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="298dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="328dp"
+        android:layout_marginBottom="368dp"
         android:backgroundTint="#D9D9D9"
         android:text="III. Преобразование буквенных выражений"
         android:textColor="#846969"
@@ -66,14 +66,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="311dp"
         android:layout_height="72dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="256dp"
         android:backgroundTint="#D9D9D9"
         android:text="IV. Геометрические фигуры и тела"
         android:textColor="#846969"
@@ -81,7 +81,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
