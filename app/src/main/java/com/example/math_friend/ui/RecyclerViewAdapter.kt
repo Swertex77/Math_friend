@@ -1,16 +1,16 @@
-package ui
+package com.example.math_friend.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.math_friend.R
-import com.example.math_friend.data.Word
+import com.example.math_friend.data.Theory
 import com.example.math_friend.databinding.ListItemBinding
 
 class RecyclerViewAdapter(
-    private val words: List<Word>,
-    private val clickListener: (Word) -> Unit
+    private val theories: List<Theory>,
+    private val clickListener: (Theory) -> Unit
 ) : RecyclerView.Adapter<RecyclerViewAdapter.DictViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = DictViewHolder(
         DataBindingUtil.inflate(
@@ -19,15 +19,15 @@ class RecyclerViewAdapter(
     )
 
     override fun onBindViewHolder(holder: DictViewHolder, position: Int) =
-        holder.bind(words[position], clickListener)
+        holder.bind(theories[position], clickListener)
 
-    override fun getItemCount() = words.size
+    override fun getItemCount() = theories.size
 
     inner class DictViewHolder(private val binding: ListItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(word: Word, clickListener: (Word) -> Unit) = with(binding) {
-            wordTextView.text = word.word
-            translateTextView.text = word.translate
-            listItemLayout.setOnClickListener { clickListener(word) }
+        fun bind(theory: Theory, clickListener: (Theory) -> Unit) = with(binding) {
+            wordTextView.text = theory.word
+            translateTextView.text = theory.translate
+            listItemLayout.setOnClickListener { clickListener(theory) }
         }
     }
 

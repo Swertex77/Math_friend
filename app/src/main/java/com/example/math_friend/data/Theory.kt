@@ -1,12 +1,16 @@
-package data
+package com.example.math_friend.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "word_data_table")
-data class Word(
-    @PrimaryKey(autoGenerate = true)
+@Entity(tableName = "theory_data_table")
+data class Theory(
+    @PrimaryKey
+        val theoryId: Int,
+        val topicId: Int,
+        val content: String
+)
     @ColumnInfo(name = "word_id")
     var id: Int,
 

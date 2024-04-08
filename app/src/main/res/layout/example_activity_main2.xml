@@ -8,7 +8,7 @@
     android:background="#CBCBCB"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="ui.MainActivity">
+    tools:context=".math_friend.data.1.ui.MainActivity">
 
 
     <ImageView

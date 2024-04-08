@@ -1,4 +1,4 @@
-package ui
+package com.example.math_friend.ui
 
 import android.os.Bundle
 import android.widget.Button

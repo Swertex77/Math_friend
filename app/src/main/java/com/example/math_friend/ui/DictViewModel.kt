@@ -1,4 +1,4 @@
-package ui
+package com.example.math_friend.ui
 
 
 import androidx.databinding.Observable
@@ -7,8 +7,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import data.DictRepository
-import data.Word
+import com.example.math_friend.data.DictRepository
+import com.example.math_friend.data.Theory
 import kotlinx.coroutines.launch
 
 class DictViewModel(private val repository: DictRepository) : ViewModel(), Observable {
@@ -26,7 +26,7 @@ class DictViewModel(private val repository: DictRepository) : ViewModel(), Obser
 
 
     private var isUpdateOrDelete = false
-    private lateinit var wordToUpdateOrDelete: Word
+    private lateinit var theoryToUpdateOrDelete: Theory
 
     init {
         addText()
@@ -37,26 +37,26 @@ class DictViewModel(private val repository: DictRepository) : ViewModel(), Obser
         clearAllOrDeleteButtonText.value = "Clear all"
     }
 
-    fun observeWords(owner: LifecycleOwner, observer: Observer<List<Word>>) =
+    fun observeWords(owner: LifecycleOwner, observer: Observer<List<Theory>>) =
         repository.getWords().observe(owner, observer)
 
 
     fun saveOrUpdate() {
         if (!dataIsEmpty(inputWord) || !dataIsEmpty(inputTranslate)) {
             if (isUpdateOrDelete) {
-                wordToUpdateOrDelete.apply {
+                theoryToUpdateOrDelete.apply {
                     word = inputWord.value ?: ""
                     translate = inputTranslate.value ?: ""
                 }
                 viewModelScope.launch {
-                    repository.update(wordToUpdateOrDelete)
+                    repository.update(theoryToUpdateOrDelete)
                     refreshUI()
 
                 }
             } else {
                 viewModelScope.launch {
                     repository.insert(
-                        Word(0, inputWord.value ?: "", inputTranslate.value ?: "")
+                        Theory(0, inputWord.value ?: "", inputTranslate.value ?: "")
                     )
                 }
                 clearText()
@@ -77,12 +77,12 @@ class DictViewModel(private val repository: DictRepository) : ViewModel(), Obser
         inputTranslate.value = ""
     }
 
-    fun initUpdateAndDelete(word: Word) {
-        inputWord.value = word.word
-        inputTranslate.value = word.translate
+    fun initUpdateAndDelete(theory: Theory) {
+        inputWord.value = theory.word
+        inputTranslate.value = theory.translate
 
         isUpdateOrDelete = true
-        wordToUpdateOrDelete = word
+        theoryToUpdateOrDelete = theory
 
         saveOrUpdateButtonText.value = "Update"
         clearAllOrDeleteButtonText.value = "Delete"
@@ -90,7 +90,7 @@ class DictViewModel(private val repository: DictRepository) : ViewModel(), Obser
 
     fun clearAllOrDelete() = if (isUpdateOrDelete)
         viewModelScope.launch {
-            repository.delete(wordToUpdateOrDelete)
+            repository.delete(theoryToUpdateOrDelete)
             refreshUI()
         } else viewModelScope.launch {
         repository.deleteAll()
